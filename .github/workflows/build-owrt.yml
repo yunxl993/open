@@ -2,8 +2,10 @@
 name: twrt
 
 on:
-  schedule:
-    - cron: "0 16 * * *"
+  repository_dispatch:
+    types: [Weekly Build Trigger]
+#  schedule:
+#    - cron: "0 16 * * *"
   workflow_dispatch:
     inputs:
       ssh:

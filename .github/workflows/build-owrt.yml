@@ -3,7 +3,7 @@ name: twrt
 
 on:
   repository_dispatch:
-    types: [Weekly Build Trigger]
+    types: [Source Code Update]
 #  schedule:
 #    - cron: "0 16 * * *"
   workflow_dispatch:
